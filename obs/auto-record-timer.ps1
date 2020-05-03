@@ -15,11 +15,11 @@
 #>
 
 $folder = New-Item -ItemType Directory -Path ".\$((Get-Date).ToString('yyyy-MM-ddThh-mm-ss'))"
-& ".\OBSCommand\OBSCommand.exe" /command=SetRecordingFolder, rec-folder=$folder
+& ".\OBSCommand\OBSCommand.exe" /command="SetRecordingFolder,rec-folder=$folder"
 
 do {
   & ".\OBSCommand\OBSCommand.exe" /startrecording 
-  Start-Sleep -Seconds 10
+  Start-Sleep -Seconds (60 * 10)
   & ".\OBSCommand\OBSCommand.exe" /stoprecording
   Start-Sleep -Seconds 3
 } while ($true)

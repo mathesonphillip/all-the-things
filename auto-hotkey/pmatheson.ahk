@@ -13,6 +13,7 @@ return
 
 :*:m@::matheson.phillip@gmail.com
 :*:p@::pmatheson@dxc.com
+:*:ddb::DynamoDB
 
 
 

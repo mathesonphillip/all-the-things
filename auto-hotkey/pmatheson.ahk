@@ -14,15 +14,8 @@ return
 :*:m@::matheson.phillip@gmail.com
 :*:p@::pmatheson@dxc.com
 :*:ddb::DynamoDB
-
-
+:*:cfo::CloudFormation
+:*:cfr::CloudFront
 
 DetectHiddenWindows, On
 SetTitleMatchMode, 2
-
-^q::
-   	WinActivate, - firefox ahk_class MozillaWindowClass
-	Send ^l^a{Del}`%
-	Send ^a{Del}
-	Send `%
-return
